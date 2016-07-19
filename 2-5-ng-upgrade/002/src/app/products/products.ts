@@ -5,7 +5,7 @@ import { ProductsAddComponent } from './add/products-add.component'
 import { ProductsMainComponent } from './main/products-main.component'
 import { adapter } from '../../index'
 
-/// serwis ng2 musi zostać dodany jako provider 
+/// the ng2 service must be added as a provider
 adapter.addProvider(ProductsService);
 
 export const ProductsModule: IModule = angular
@@ -13,5 +13,5 @@ export const ProductsModule: IModule = angular
   .component('products', ProductsComponent)
   .component('productsAdd', ProductsAddComponent)
   .component('productsMain', ProductsMainComponent)
-  /// Downgrade serwisu to wywołanie metody
+  /// Downgrade of the service - calling the method
   .service('Products', adapter.downgradeNg2Provider(ProductsService))
