@@ -1,7 +1,7 @@
 import './index.styl'
 
 import * as angular from 'angular'
-//6/ Importujemy wszystkie komponenty do aplikacji głównej 
+//6/ Importing all components to the main application
 import { ComponentsModule } from './app/app'
 
 angular

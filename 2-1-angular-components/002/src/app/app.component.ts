@@ -1,6 +1,6 @@
 import IComponentOptions = angular.IComponentOptions
 
-//4/ Sam komponent aplikacji zawiera na razie komponent Products
+//4/ The application component contains the Products component
 export const AppComponent: IComponentOptions = {
   controller: class {},
   template: `<products></products>`,

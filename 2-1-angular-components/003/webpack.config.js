@@ -20,7 +20,7 @@ const config = {
 		],
 		loaders: [
 			{ test: /\.ts$/, loaders: ['ng-annotate', 'ts'], exclude: /node_modules/ },
-      /// Potrzebne jest dodatkowe query do loadera css
+      /// We need an addition query for css loader
 			{ test: /\.styl$/, loaders: ['style', 'css?modules', 'stylus'] },
 		],
 	},
