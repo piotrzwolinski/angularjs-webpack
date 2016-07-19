@@ -1,4 +1,4 @@
-// webpack pozwala importować nie tylko JS
+// Using webpack we can import not only JS
 import './index.styl'
 
 import angular from 'angular'

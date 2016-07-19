@@ -2,13 +2,13 @@ const webpack = require('webpack')
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-/// Dodajmy flagę do rozróżnienia czy to build prod czy dev
+/// Adding a flag to differentate if it is a prod or dev build
 const isProdEnv = process.env.WEBPACK_ENV === 'production';
 
 const config = {
 	entry: './src/index',
 	output: {
-		/// ścieżka do eksportu
+		/// path for export
 		path: path.resolve(__dirname, './dist'),
 		filename: 'bundle.js',
 	},
@@ -17,7 +17,7 @@ const config = {
 			{ test: /\.styl$/, loaders: ['style', 'css', 'stylus'] },
 		],
 	},
-	//4/ Użyjemy UglifyJS do wypuszczenia produkcyjnego kodu
+	//4/ Using UglifyJS for generating the production code
 	plugins: isProdEnv ? [
 		new webpack.optimize.UglifyJsPlugin(),
 		new CopyWebpackPlugin([{ from: './src/index.html', to: 'index.html' }])
