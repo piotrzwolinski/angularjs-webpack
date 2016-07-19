@@ -12,7 +12,7 @@ export const ProductsComponent: IComponentOptions = {
       this.products = Products.products
     }
 
-    //3/ Metoda obsługująca dodanie produktu
+    //3/ Method for handling the product adding
     public addProduct(newProduct: IProduct): void {
       this.products.push(newProduct)
     }
@@ -25,7 +25,7 @@ export const ProductsComponent: IComponentOptions = {
           {{ product.name }} - {{ product.price | currency }}
         </li>
       </ul>
-      <!-- Wykorzystujemy komponent -->
+      <!-- We use the component -->
       <products-add
         on-product-added="$ctrl.addProduct(newProduct)"
       ></products-add>

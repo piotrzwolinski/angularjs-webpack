@@ -2,7 +2,7 @@ import IComponentOptions = angular.IComponentOptions
 import { IProduct } from '../product.interface'
 
 export const ProductsAddComponent: IComponentOptions = {
-  //3/ Bindujemy callback
+  //3/ Binding the callback
   bindings: {
     onProductAdded: '&',
   },
@@ -19,7 +19,7 @@ export const ProductsAddComponent: IComponentOptions = {
       }
     }
   },
-  //19/ Formularza dodawania nowego produktu
+  //19/ Form for adding a new product
   template: `
     <form 
       ng-submit="$ctrl.onSubmit({ newProduct: $ctrl.newProduct })"
