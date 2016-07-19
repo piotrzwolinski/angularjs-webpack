@@ -8,6 +8,6 @@ export const ProductsModule: IModule = angular
   .module('app.components.products', [])
   .component('products', ProductsComponent)
   .component('productsAdd', ProductsAddComponent)
-  /// Dodajemy komponent dla ścieżki głównej
+  /// Adding the component to the main path
   .component('productsMain', ProductsMainComponent)
   .service('Products', ProductsService)

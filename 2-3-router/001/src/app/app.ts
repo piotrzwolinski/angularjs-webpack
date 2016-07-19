@@ -2,15 +2,15 @@ import IModule = angular.IModule
 import { ProductsModule } from './products/products'
 import { AppComponent } from './app.component'
 
-/// Importujemy router
+/// Importing the router
 import '@angular/router/angular1/angular_1_router'
 
 export const ComponentsModule: IModule = angular
   .module('app.components', [
-    /// Dodajemy go do zależności
+    /// Adding it to dependencies
     'ngComponentRouter',
     ProductsModule.name,
   ])
   .component('app', AppComponent)
-  /// Ustalamy jaki jest główny komponent routera
+  /// Setting what it the main router component
   .value('$routerRootComponent', 'app')

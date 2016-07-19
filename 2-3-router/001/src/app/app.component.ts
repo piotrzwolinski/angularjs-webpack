@@ -2,7 +2,7 @@
 import { IComponentOptionsRouter } from './shared/interfaces/component-options-router.interface'
 
 export const AppComponent: IComponentOptionsRouter = {
-  //3/ Konfiguracja routera
+  //3/ Configuring the router
   $routeConfig: [{
     component: 'products',
     name: 'Products',
@@ -10,6 +10,6 @@ export const AppComponent: IComponentOptionsRouter = {
     useAsDefault: true,
   }],
   controller: class {},
-  /// W komponencie App ląduje teraz dyrektywa routera
+  /// The router directive land in App component now
   template: `<ng-outlet></ng-outlet>`,
 }

@@ -10,5 +10,5 @@ typings install angular --save --ambient
 npm i tslint tslint-loader --save-dev
 npm i ng-annotate ng-annotate-loader --save-dev
 typings install node --ambient --save
-# dodajemy paczkę component routera
+# adding the component router pack
 npm i @angular/router@^0.2.0 --save

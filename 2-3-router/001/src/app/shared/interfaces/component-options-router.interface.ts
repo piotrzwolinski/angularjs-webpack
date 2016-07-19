@@ -1,6 +1,6 @@
 import IComponentOptions = angular.IComponentOptions
 
-//10/ Tworzymy interfejsy dla routera
+//10/ We create the interface for the router
 interface IRouteConfig {
   path: string
   name: string

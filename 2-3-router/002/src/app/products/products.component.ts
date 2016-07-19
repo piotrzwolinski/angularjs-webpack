@@ -3,7 +3,7 @@ import { IComponentOptionsRouter } from '../shared/interfaces/component-options-
 import { IProduct } from './product.interface'
 
 export const ProductsComponent: IComponentOptionsRouter = {
-  //11/ Konfiguracja routera ląduje też w ProductsComponent
+  //11/ The router's configuration lands also in ProductsComponent
   $routeConfig: [{
     component: 'productsMain',
     name: 'ProductsMain',
@@ -31,7 +31,7 @@ export const ProductsComponent: IComponentOptionsRouter = {
           {{ product.name }} - {{ product.price | currency }}
         </li>
       </ul>
-      <!-- Zamiast jawnego wywołania komponentu dodajemy dyrektywę routera -->
+      <!-- Instead of calling the component, we add the router's directive -->
       <ng-outlet></ng-outlet>
     </div>
   `,
