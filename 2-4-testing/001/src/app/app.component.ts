@@ -4,7 +4,7 @@ export const AppComponent: IComponentOptionsRouter = {
   $routeConfig: [{
     component: 'products',
     name: 'Products',
-    /// Zagnieżdzamy ścieżkę
+    /// Embedding the path
     path: 'products/...',
     useAsDefault: true,
   }],
