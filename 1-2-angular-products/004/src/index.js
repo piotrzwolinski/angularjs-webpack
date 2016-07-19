@@ -4,6 +4,6 @@ import { AppService } from './app/app.service'
 
 angular
 	.module('app', [])
-	/// Dzięki strict DI dostaniemy błąd bez jawnego podania wstrzykiwanych zależności
+	/// Thanks to strict DI we will get an error without explicit definition of injected dependencies
 	.controller('AppController', ['AppService', AppController])
 	.service('AppService', AppService)

@@ -1,4 +1,4 @@
-//5/ Korzystamy z dobrych praktyk Angular <1.5
+//5/ We use the best practices of Angular <1.5
 export function AppController() {
 	const vm = this
 
