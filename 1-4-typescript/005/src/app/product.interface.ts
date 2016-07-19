@@ -1,4 +1,4 @@
-//5/ Dodajemy interfejs
+//5/ Adding interface
 export interface IProduct {
   name: string
   price: number

@@ -1,4 +1,4 @@
-//7/ Zmieńmy funkcje na klasy 
+//7/ Changing function to classes
 export class AppController {
   public products: any[]
 

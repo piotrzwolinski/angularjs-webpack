@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isProdEnv = process.env.WEBPACK_ENV === 'production';
 
 const config = {
-	/// dodamy sourcemapy do łatwiejszego debugowania
+	/// adding source maps for easier debugging
 	devtool: 'source-map',
 	entry: './src/index',
 	output: {

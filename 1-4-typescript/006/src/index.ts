@@ -6,6 +6,6 @@ import { AppService } from './app/app.service'
 
 angular
   .module('app', [])
-  /// ng-annotate zrobi poprawne wstrzykiwanie za nas
+  /// ng-annotate will take care of the injection
   .controller('AppController', AppController)
   .service('AppService', AppService)
